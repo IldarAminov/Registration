@@ -1,0 +1,107 @@
+<html lang="ru" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+            <title>RegistrationForm</title>
+            <link rel="stylesheet" href="style-form.css">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    </head>
+<body>
+    <div class="container">
+        <div class="title">Регистрация</div>
+        <form action="#">
+            <div class="user-details">
+                
+                <div class="input-box">
+                    <span class="details">Имя</span>
+                        <input type="text" placeholder="Обязательное поле" required>
+                </div>
+                
+                <div class="input-box">
+                    <span class="details">Фамилия</span>
+                        <input type="text" placeholder="Обязательное поле">
+                </div>
+                
+                <div class="input-box">
+                    <span class="details">Отчество</span>
+                        <input type="text" placeholder="При наличии">
+                </div>
+                
+                <div class="input-box">
+                    <span class="details">Пароль</span>
+                        <input type="password" placeholder="Обязательное поле" required>
+                </div>
+                
+                <div class="input-box">
+                    <span class="details">Дата рождения</span>
+                        <input type="date" placeholder="Обязательное поле" required>
+                </div>
+               
+                <div class="input-box">
+                    <span class="details">Телефон</span>
+                        <input type="tel" placeholder="Обязательное поле" required>
+                </div>
+                
+                <div class="input-box">
+                    <span class="details">Электронная почта</span>
+                        <input type="email" placeholder="Обязательное поле" required>
+                </div>
+                
+                <div class="input-box">
+                    <span class="details" >Принадлежность</span>
+                        <select id="Принадлежность" required>
+                            <option selected disabled></option>
+                            <option value="НС">Научное сообщество</option>
+                            <option value="Мин">Министерство (Минпромторг)</option>
+                            <option value="Орг">Организация</option>
+                        </select>
+                </div>
+            </div>
+
+                <div class="gender-details">
+                    <input type="radio" name="gender" id="dot-1" checked>
+                    <input type="radio" name="gender" id="dot-2">
+                    <input type="radio" name="gender" id="dot-3">
+                    <span class="gender-title">Пол</span>
+                        <div class="category">
+
+                        <label for ="dot-1">
+                            <span class="dot one"></span>
+                                <span class="gender" >Не определен</span>
+                        </label>
+                            
+                        <label for ="dot-2">
+                            <span class="dot two"></span>
+                                <span class="gender">Мужской</span>
+                        </label>
+                        <label for ="dot-3">
+                            <span class="dot three"></span>
+                                <span class="gender">Женский</span>
+                        </label>
+                        </div>
+                    </div>
+               
+                <div class="checkboxes">
+                    <input type="checkbox" required>
+                    <label for ="conf-1">
+                        <span class='conf one'>Я даю согласие на обработку персональных данных
+                    </span>
+                    </label><br>
+                    <input type="checkbox" required>
+                    <label for ="conf-2">
+                        <span class='conf two'>Я даю согласие на публичную оферту
+                    </span>
+                    </label><br>
+                    <input type="checkbox" required>
+                    <label for ="conf-3">
+                        <span class='conf three'>Я ознакомлен с политикой безопасности и работой с персональными данными
+                    </span>
+                    </label>
+                </div>
+                
+         
+            <div class="button">
+                    <input type="submit" value="Зарегистрироваться"></div>
+        </form>
+    </div> 
+</body>
+</html>
